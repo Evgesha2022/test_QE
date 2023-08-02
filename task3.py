@@ -1,4 +1,4 @@
-N=int(input("Введите количесвто циклопов: "))
+N=int(input("Введите количество циклопов: "))
 arr_=[]
 for i in range(N):
     arr_.append(int(input()))

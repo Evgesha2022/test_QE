@@ -2,6 +2,8 @@ sum_order_=int(input("Введите сумму заказа: "))
 dinero_=int(input("Внесённая сумма: "))
 def val_change(sum_order, dinero):
     change = dinero - sum_order
+    if change==0:
+        return "Сдачи нет"
     l_change=[5000, 2000, 1000, 500, 2000, 100, 50, 10, 5, 2 , 1]
     our_change=[0 for i in range(11)]
     ans=""

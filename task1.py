@@ -1,4 +1,6 @@
 def sum_numbers( x):
+    if x<=0:
+        return "Число не может быть больше нуля"
     nums = [i for i in range(x + 1)]
     nums[1]=0
     a=2
@@ -11,7 +13,6 @@ def sum_numbers( x):
         a+=1
     nums=[i for i in nums if nums[i]!=0]
     ans=0
-    print(nums)
     for k in nums:
         ans+=k
     return ans
